@@ -1,0 +1,162 @@
+{
+  "slug": "goal-setting",
+  "title": "Goal-Setting & Vision",
+  "description": "Define a compelling goal, break it into OKRs, envision your best possible self, and plot milestones.",
+  "psychology": "Written goals are 42% more likely to be achieved (Dr. Gail Matthews). OKR framework from Intel/Google. 'Best Possible Self' is a validated positive psychology intervention.",
+  "category": "goals",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 15,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "audacious_goal",
+      "prompt": "My Compelling & Audacious Goal",
+      "type": "textarea",
+      "placeholder": "What's the big thing you want to achieve?",
+      "required": true
+    },
+    {
+      "id": "objective_1",
+      "prompt": "Objective 1:",
+      "type": "text",
+      "placeholder": "First objective toward your goal"
+    },
+    {
+      "id": "objective_1_kr1",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 1"
+    },
+    {
+      "id": "objective_1_kr2",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 2"
+    },
+    {
+      "id": "objective_1_kr3",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 3"
+    },
+    {
+      "id": "objective_2",
+      "prompt": "Objective 2:",
+      "type": "text",
+      "placeholder": "Second objective toward your goal"
+    },
+    {
+      "id": "objective_2_kr1",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 1"
+    },
+    {
+      "id": "objective_2_kr2",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 2"
+    },
+    {
+      "id": "objective_2_kr3",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 3"
+    },
+    {
+      "id": "objective_3",
+      "prompt": "Objective 3:",
+      "type": "text",
+      "placeholder": "Third objective toward your goal"
+    },
+    {
+      "id": "objective_3_kr1",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 1"
+    },
+    {
+      "id": "objective_3_kr2",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 2"
+    },
+    {
+      "id": "objective_3_kr3",
+      "prompt": "KR:",
+      "type": "text",
+      "placeholder": "Key result 3"
+    },
+    {
+      "id": "best_possible_self",
+      "prompt": "In 90 days, if everything goes right, I will be...",
+      "type": "textarea",
+      "placeholder": "Describe your best possible self in 90 days"
+    },
+    {
+      "id": "confidence",
+      "prompt": "Confidence:",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Goal-Setting & Vision"
+    },
+    {
+      "type": "section_header",
+      "title": "My Compelling & Audacious Goal"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "",
+      "lines": 3,
+      "blankId": "audacious_goal"
+    },
+    {
+      "type": "section_header",
+      "title": "OKR Breakdown"
+    },
+    {
+      "type": "okr_breakdown",
+      "objectives": 3,
+      "keyResultsPerObjective": 3
+    },
+    {
+      "type": "section_header",
+      "title": "Best Possible Self"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "In 90 days, if everything goes right, I will be...",
+      "lines": 3,
+      "blankId": "best_possible_self"
+    },
+    {
+      "type": "section_header",
+      "title": "Milestone Timeline"
+    },
+    {
+      "type": "timeline",
+      "points": 4
+    },
+    {
+      "type": "scale",
+      "label": "Confidence:",
+      "max": 10,
+      "blankId": "confidence"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

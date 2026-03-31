@@ -2,3 +2,10 @@ zig-out/
 .zig-cache/
 *.pdf
 test-output*
+.superpowers/
+node_modules/
+web/.svelte-kit/
+web/build/
+.env
+.env.*
+!.env.example

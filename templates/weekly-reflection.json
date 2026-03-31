@@ -1,0 +1,113 @@
+{
+  "slug": "weekly-reflection",
+  "title": "Weekly Reflection",
+  "description": "Review your week's emotional patterns, celebrate wins, identify challenges, and set intentions.",
+  "psychology": "Self-monitoring is the first step in behavioral change (CBT foundation).",
+  "category": "reflection",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 10,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "dominant_feeling",
+      "prompt": "This week I felt mostly...",
+      "type": "text",
+      "placeholder": "One word or phrase",
+      "required": true
+    },
+    {
+      "id": "biggest_win",
+      "prompt": "Biggest win:",
+      "type": "textarea",
+      "placeholder": "What went well this week?"
+    },
+    {
+      "id": "biggest_challenge",
+      "prompt": "Biggest challenge:",
+      "type": "textarea",
+      "placeholder": "What was hardest?"
+    },
+    {
+      "id": "mood_pattern",
+      "prompt": "What pattern do I notice in my moods this week?",
+      "type": "textarea",
+      "placeholder": "Look for recurring themes..."
+    },
+    {
+      "id": "ruler_skill",
+      "prompt": "Which emotional skill did I practice this week?",
+      "type": "multi",
+      "options": ["Recognize", "Understand", "Label", "Express", "Regulate"]
+    },
+    {
+      "id": "next_week",
+      "prompt": "Next week, I want to...",
+      "type": "textarea",
+      "placeholder": "Set an intention for next week"
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Weekly Reflection"
+    },
+    {
+      "type": "section_header",
+      "title": "This week at a glance"
+    },
+    {
+      "type": "mini_mood_tracker",
+      "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "This week I felt mostly...",
+      "lines": 1,
+      "blankId": "dominant_feeling"
+    },
+    {
+      "type": "section_header",
+      "title": "Wins & Challenges"
+    },
+    {
+      "type": "dual_box",
+      "labelA": "Biggest win:",
+      "labelB": "Biggest challenge:",
+      "linesPerBox": 3
+    },
+    {
+      "type": "section_header",
+      "title": "Pattern Recognition"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "What pattern do I notice in my moods this week?",
+      "lines": 3,
+      "blankId": "mood_pattern"
+    },
+    {
+      "type": "section_header",
+      "title": "RULER Growth"
+    },
+    {
+      "type": "checkbox_row",
+      "labels": ["Recognize", "Understand", "Label", "Express", "Regulate"],
+      "blankId": "ruler_skill"
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "Next week, I want to...",
+      "lines": 2,
+      "blankId": "next_week"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

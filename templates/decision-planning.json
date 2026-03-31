@@ -1,0 +1,134 @@
+{
+  "slug": "decision-planning",
+  "title": "Decision Planning",
+  "description": "Structure a tough decision using inversion thinking, second-order consequences, and option comparison.",
+  "psychology": "Inversion (Charlie Munger via Shane Parrish), second-order thinking, Eisenhower Matrix, Venn diagrams for option comparison (untools.co).",
+  "category": "decision",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 15,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "decision",
+      "prompt": "The decision I'm facing",
+      "type": "textarea",
+      "placeholder": "Describe the decision you need to make",
+      "required": true
+    },
+    {
+      "id": "inversion",
+      "prompt": "What would make this FAIL?",
+      "type": "textarea",
+      "placeholder": "Think backwards \u2014 avoid what guarantees failure."
+    },
+    {
+      "id": "consequence_now",
+      "prompt": "What happens now?",
+      "type": "textarea",
+      "placeholder": "Immediate consequences"
+    },
+    {
+      "id": "consequence_1month",
+      "prompt": "What happens in 1 month?",
+      "type": "textarea",
+      "placeholder": "Short-term ripple effects"
+    },
+    {
+      "id": "consequence_1year",
+      "prompt": "What happens in 1 year?",
+      "type": "textarea",
+      "placeholder": "Long-term ripple effects"
+    },
+    {
+      "id": "option_a",
+      "prompt": "Option A",
+      "type": "textarea",
+      "placeholder": "Unique pros of Option A"
+    },
+    {
+      "id": "option_b",
+      "prompt": "Option B",
+      "type": "textarea",
+      "placeholder": "Unique pros of Option B"
+    },
+    {
+      "id": "option_both",
+      "prompt": "What's true of both options?",
+      "type": "textarea",
+      "placeholder": "Shared qualities"
+    },
+    {
+      "id": "final_decision",
+      "prompt": "After reflection, I will:",
+      "type": "textarea",
+      "placeholder": "State your decision clearly",
+      "required": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Decision Planning"
+    },
+    {
+      "type": "section_header",
+      "title": "The decision I'm facing"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "",
+      "lines": 2,
+      "blankId": "decision"
+    },
+    {
+      "type": "section_header",
+      "title": "Inversion: What would make this FAIL?"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "Think backwards \u2014 avoid what guarantees failure.",
+      "lines": 4,
+      "blankId": "inversion"
+    },
+    {
+      "type": "section_header",
+      "title": "Second-Order Thinking"
+    },
+    {
+      "type": "multi_column_boxes",
+      "columns": [
+        { "label": "Now", "lines": 3 },
+        { "label": "In 1 month", "lines": 3 },
+        { "label": "In 1 year", "lines": 3 }
+      ]
+    },
+    {
+      "type": "section_header",
+      "title": "Compare Options"
+    },
+    {
+      "type": "venn2",
+      "labelA": "Option A",
+      "labelB": "Option B"
+    },
+    {
+      "type": "section_header",
+      "title": "After reflection, I will:"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "",
+      "lines": 2,
+      "blankId": "final_decision"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

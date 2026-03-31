@@ -1,0 +1,129 @@
+{
+  "slug": "daily-mood",
+  "title": "Daily Mood Check-in",
+  "description": "Map your emotional state using the RULER mood meter, identify triggers, and choose a regulation strategy.",
+  "psychology": "Marc Brackett's Mood Meter — affect labeling reduces amygdala reactivity ~50%.",
+  "category": "mood",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 5,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "mood_quadrant",
+      "prompt": "How are you feeling right now?",
+      "type": "choice",
+      "options": [
+        "High Energy + Unpleasant",
+        "High Energy + Pleasant",
+        "Low Energy + Unpleasant",
+        "Low Energy + Pleasant"
+      ],
+      "required": true
+    },
+    {
+      "id": "mood_word",
+      "prompt": "Circle the word that fits best",
+      "type": "text",
+      "placeholder": "e.g. Anxious, Excited, Calm..."
+    },
+    {
+      "id": "trigger",
+      "prompt": "What triggered this feeling?",
+      "type": "textarea",
+      "placeholder": "Describe what happened...",
+      "required": true
+    },
+    {
+      "id": "body_location",
+      "prompt": "Where do you feel it in your body?",
+      "type": "multi",
+      "options": ["Head", "Chest", "Stomach", "Hands", "Feet"]
+    },
+    {
+      "id": "regulation",
+      "prompt": "What would help right now?",
+      "type": "multi",
+      "options": ["Change thinking", "Move body", "Be mindful", "Reach out"]
+    },
+    {
+      "id": "regulation_other",
+      "prompt": "Something else:",
+      "type": "text",
+      "placeholder": "Another strategy..."
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Daily Mood Check-in"
+    },
+    {
+      "type": "section_header",
+      "title": "How are you feeling right now?"
+    },
+    {
+      "type": "mood_grid",
+      "quadrants": [
+        ["Anxious", "Stressed", "Frustrated", "Overwhelmed", "Angry", "Panicked", "Agitated", "Irritated", "Restless"],
+        ["Excited", "Thrilled", "Inspired", "Energized", "Optimistic", "Passionate", "Elated", "Enthusiastic", "Confident"],
+        ["Sad", "Drained", "Lonely", "Bored", "Tired", "Numb", "Disconnected", "Melancholy", "Depleted"],
+        ["Calm", "Content", "Grateful", "Relaxed", "Peaceful", "Serene", "Hopeful", "Comfortable", "Secure"]
+      ],
+      "blankId": "mood_quadrant"
+    },
+    {
+      "type": "section_header",
+      "title": "What triggered this feeling?"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "",
+      "lines": 3,
+      "blankId": "trigger"
+    },
+    {
+      "type": "layout",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "section_header",
+          "title": "What would help right now?"
+        },
+        {
+          "type": "section_header",
+          "title": "Where do you feel it?"
+        }
+      ]
+    },
+    {
+      "type": "layout",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "checkbox_row",
+          "labels": ["Change thinking", "Move body", "Be mindful", "Reach out"],
+          "blankId": "regulation"
+        },
+        {
+          "type": "body_figure",
+          "annotations": ["Head", "Chest", "Stomach", "Hands", "Feet"]
+        }
+      ]
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "Something else:",
+      "lines": 1,
+      "blankId": "regulation_other"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

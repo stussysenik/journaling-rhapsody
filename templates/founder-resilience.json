@@ -1,0 +1,205 @@
+{
+  "slug": "founder-resilience",
+  "title": "Founder Resilience Check",
+  "description": "Combat imposter syndrome, track vital signs, reframe setbacks, practice gratitude, and focus on what you control.",
+  "psychology": "72% of entrepreneurs face mental health challenges. Cognitive reframing (CBT), Circle of Control (Covey), affect labeling.",
+  "category": "resilience",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 10,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "imposter_voice",
+      "prompt": "The voice in my head says:",
+      "type": "textarea",
+      "placeholder": "What does the imposter syndrome voice say?"
+    },
+    {
+      "id": "imposter_evidence",
+      "prompt": "The evidence says:",
+      "type": "textarea",
+      "placeholder": "What does reality actually show?"
+    },
+    {
+      "id": "vital_sleep",
+      "prompt": "Sleep",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "vital_focus",
+      "prompt": "Focus",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "vital_energy",
+      "prompt": "Energy",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "vital_motivation",
+      "prompt": "Motivation",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "vital_connection",
+      "prompt": "Connection",
+      "type": "scale",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "reframe_setback",
+      "prompt": "The setback:",
+      "type": "textarea",
+      "placeholder": "What went wrong?"
+    },
+    {
+      "id": "reframe_lesson",
+      "prompt": "The lesson:",
+      "type": "textarea",
+      "placeholder": "What can I learn from this?"
+    },
+    {
+      "id": "reframe_next",
+      "prompt": "The next move:",
+      "type": "textarea",
+      "placeholder": "What will I do differently?"
+    },
+    {
+      "id": "gratitude_1",
+      "prompt": "1.",
+      "type": "text",
+      "placeholder": "Something I'm grateful for"
+    },
+    {
+      "id": "gratitude_2",
+      "prompt": "2.",
+      "type": "text",
+      "placeholder": "Something I'm grateful for"
+    },
+    {
+      "id": "gratitude_3",
+      "prompt": "3.",
+      "type": "text",
+      "placeholder": "Something I'm grateful for"
+    },
+    {
+      "id": "control_inside",
+      "prompt": "What I control",
+      "type": "textarea",
+      "placeholder": "Things within my circle of control"
+    },
+    {
+      "id": "control_outside",
+      "prompt": "What I can't",
+      "type": "textarea",
+      "placeholder": "Things outside my control"
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Founder Resilience Check"
+    },
+    {
+      "type": "section_header",
+      "title": "Imposter Check"
+    },
+    {
+      "type": "dual_box",
+      "labelA": "The voice in my head says:",
+      "labelB": "The evidence says:",
+      "linesPerBox": 3
+    },
+    {
+      "type": "section_header",
+      "title": "Vital Signs"
+    },
+    {
+      "type": "scale",
+      "label": "Sleep",
+      "max": 10,
+      "blankId": "vital_sleep"
+    },
+    {
+      "type": "scale",
+      "label": "Focus",
+      "max": 10,
+      "blankId": "vital_focus"
+    },
+    {
+      "type": "scale",
+      "label": "Energy",
+      "max": 10,
+      "blankId": "vital_energy"
+    },
+    {
+      "type": "scale",
+      "label": "Motivation",
+      "max": 10,
+      "blankId": "vital_motivation"
+    },
+    {
+      "type": "scale",
+      "label": "Connection",
+      "max": 10,
+      "blankId": "vital_connection"
+    },
+    {
+      "type": "section_header",
+      "title": "Cognitive Reframe"
+    },
+    {
+      "type": "connected_boxes",
+      "labels": ["The setback:", "The lesson:", "The next move:"]
+    },
+    {
+      "type": "section_header",
+      "title": "Gratitude"
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "1.",
+      "lines": 1,
+      "blankId": "gratitude_1"
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "2.",
+      "lines": 1,
+      "blankId": "gratitude_2"
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "3.",
+      "lines": 1,
+      "blankId": "gratitude_3"
+    },
+    {
+      "type": "section_header",
+      "title": "Circle of Control"
+    },
+    {
+      "type": "concentric_circles",
+      "innerLabel": "What I control",
+      "outerLabel": "What I can't"
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}

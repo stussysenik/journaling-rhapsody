@@ -1,0 +1,118 @@
+{
+  "slug": "progress-checkin",
+  "title": "Progress Check-in",
+  "description": "Compare goals to reality, gauge momentum, identify blockers, commit to one action, and map what you've learned.",
+  "psychology": "Progress principle (Teresa Amabile, Harvard) \u2014 small wins are the strongest motivator.",
+  "category": "progress",
+  "version": "1.0.0",
+  "status": "published",
+  "estimatedMinutes": 10,
+  "blanks": [
+    {
+      "id": "date",
+      "prompt": "Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "goals_set",
+      "prompt": "Goals I set:",
+      "type": "textarea",
+      "placeholder": "What did you plan to do?"
+    },
+    {
+      "id": "goals_reality",
+      "prompt": "Where I am now:",
+      "type": "textarea",
+      "placeholder": "Where do things actually stand?"
+    },
+    {
+      "id": "momentum",
+      "prompt": "Momentum:",
+      "type": "choice",
+      "options": ["Stalled", "Slow", "Steady", "Fast", "Flying"],
+      "required": true
+    },
+    {
+      "id": "blockers",
+      "prompt": "What's blocking me?",
+      "type": "textarea",
+      "placeholder": "Obstacles, fears, dependencies..."
+    },
+    {
+      "id": "one_action",
+      "prompt": "One thing I can do TODAY to move forward:",
+      "type": "textarea",
+      "placeholder": "The smallest meaningful step",
+      "required": true
+    },
+    {
+      "id": "who_can_help",
+      "prompt": "Who can help?",
+      "type": "textarea",
+      "placeholder": "People, communities, resources..."
+    }
+  ],
+  "sections": [
+    {
+      "type": "header",
+      "title": "Progress Check-in"
+    },
+    {
+      "type": "section_header",
+      "title": "Goals vs. Reality"
+    },
+    {
+      "type": "paired_columns",
+      "labelA": "Goals I set:",
+      "labelB": "Where I am now:",
+      "rows": 3
+    },
+    {
+      "type": "section_header",
+      "title": "Momentum"
+    },
+    {
+      "type": "momentum_meter",
+      "labels": ["Stalled", "Slow", "Steady", "Fast", "Flying"],
+      "blankId": "momentum"
+    },
+    {
+      "type": "section_header",
+      "title": "Blockers"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "What's blocking me?",
+      "lines": 3,
+      "blankId": "blockers"
+    },
+    {
+      "type": "section_header",
+      "title": "One Move"
+    },
+    {
+      "type": "lined_box",
+      "prompt": "One thing I can do TODAY to move forward:",
+      "lines": 2,
+      "blankId": "one_action"
+    },
+    {
+      "type": "prompt_lines",
+      "prompt": "Who can help?",
+      "lines": 3,
+      "blankId": "who_can_help"
+    },
+    {
+      "type": "section_header",
+      "title": "Progress Map"
+    },
+    {
+      "type": "venn3",
+      "labels": ["Planned", "Did", "Learned"]
+    },
+    {
+      "type": "footer"
+    }
+  ]
+}
