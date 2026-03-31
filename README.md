@@ -27,6 +27,9 @@
 
 ## MadLibs Web
 
+![Demo](demo.gif)
+
+
 The heart of feelcheck — interactive fill-in-the-blank journal worksheets on the web.
 
 **Browse** psychology-backed templates, **fill in** fun MadLibs-style prompts, and **download** your personalized PDF.
